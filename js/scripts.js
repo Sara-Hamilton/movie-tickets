@@ -41,15 +41,12 @@ $(document).ready(function(){
     price = price(inputtedMovieTime, inputtedMovieType, inputtedQuantity).toFixed(2);
 
     newTicket = new Ticket(inputtedMovieName, inputtedMovieTime, inputtedMovieType, price);
-    // $(".quantity").append(inputtedQuantity);
-    // $(".name").append(inputtedMovieName);
-    // $(".price").append("$" + price);
+
     $(".name").text(newTicket.name);
     $(".time").text(newTicket.time);
     $(".type").text(newTicket.type);
     $(".quantity").text(inputtedQuantity);
     $(".price").text("$" + price);
-
 
     $(".ticket-price").show();
   });
