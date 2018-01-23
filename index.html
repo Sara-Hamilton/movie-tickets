@@ -5,9 +5,47 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/scripts.js"></script>
-    <title></title>
+    <title>Ticket Purchaser</title>
   </head>
   <body>
+    <div class="container">
+      <h1>Welcome to the Movie Ticket Purchaser!</h1>
+      <p>Enter your age and we'll let you know if you're eligible for a youth or senior discount</p>
 
+      <div class="row">
+
+        <div class="col-md-6">
+          <h2>Pick a Movie:</h2>
+          <form id="new-movie">
+            <div class="form-group">
+              <label for="new-movie-name">Movie</label>
+              <select class="form-control" id="new-movie-name">
+                <option>My Dog Ramone</option>
+                <option>My Dinner With Jesus</option>
+                <option>Hamiltons vs. Wookies: An Epic Showdown</option>
+                <option>Breakfast at Meier and Frank</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="new-time">Time></label>
+              <select class="form-control" id="new-time">
+                <option>Matinee (before your teenagers wake up)</option>
+                <option>Evening (self explanatory)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="new-type">Type</label>
+              <select class="form-control" id="new-type">
+                <option>Youth (12 and under)</option>
+                <option>Student</option>
+                <option>Adult</option>
+                <option>Senior</options>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary">GIVE ME MY TICKET!</button>
+          </form>
+          </div>
+        </div>
+      </div>
   </body>
 </html>
