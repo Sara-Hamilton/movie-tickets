@@ -39,6 +39,9 @@ $(document).ready(function(){
     inputtedMovieType = $("select#new-type").val();
     inputtedQuantity = parseInt($("input#new-quantity").val());
     price = price(inputtedMovieTime, inputtedMovieType, inputtedQuantity).toFixed(2);
-    console.log("price "+ price);
+
+    $(".quantity").append(inputtedQuantity);
+    $(".name").append(inputtedMovieName);
+    $(".price").append("$" + price);
   });
 });
